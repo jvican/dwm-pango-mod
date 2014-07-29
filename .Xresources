@@ -1,0 +1,128 @@
+! Configuración URXVT
+! .Xresources file
+
+
+! Color scheme
+
+!black
+*color0:#3D3D3D
+*color8:#5E5E5E
+!red
+*color1:#8A2F58
+*color9:#CF4F88
+!green
+*color2:#287373
+*color10:#53A6A6
+!yellow
+*color3:#914E89
+*color11:#BF85CC
+!blue
+*color4:#395573
+*color12:#4779B3
+!magenta
+*color5:#5E468C
+*color13:#7F62B3
+!cyan
+*color6:#2B7694
+*color14:#47959E
+!white
+*color7:#899CA1
+*color15:#C0C0C0
+
+
+! Main configuration
+
+URxvt.foreground: #CCCCCC
+URxvt*background: #0f1d39
+! URxvt*background: #060606
+urxvt*depth: 32
+!urxvt*background: rgba:2000/2000/2000/dddd
+URxvt*transparent: false
+URxvt*fading: 2%
+URxvt*fadeColor: grey
+URxvt*shading: 75
+URxvt.font: xft:Terminus:style=Regular:pixelsize=24
+!URxvt.font: -*-terminus-medium-r-normal--22-220-72-72-c-100-iso8859-1
+
+
+! run "fc-list" or "xlsfonts" for a list of available fonts
+! Configuración para aplicaciones que ignoran fontconfig
+
+!Xft.autohint:0
+!Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xft.dpi: 96
+Xft.hintstyle: hintslight
+Xft.hinting: true
+Xft.antialias: true
+
+
+! Extra information
+
+URxvt*scrollBar: False
+URxvt*scrollTtyOutput: False
+URxvt*scrollTtyKeypress: False
+URxvt*secondaryScroll: False
+*perl-ext-common:  default,matcher
+*internalBorder: 24
+*externalBorder: 0
+URxvt*borderLess: false
+*buffered: true
+! URxvt.cursorColor: #395573
+URxvt*cursorColor: #999
+URxvt*highlightColor:#999
+*keysym.Shift-Control-V: perl:clipboard:paste
+*iso14755: False
+*clipboard.autocopy: true
+
+
+! More extra information
+
+URxvt*allow_bold: true
+URxvt*tint: #000000
+URxvt*cursorBlink: false
+URxvt*saveLines: 1000
+URxvt*urlLauncher: /usr/bin/google-chrome-stable
+URxvt*colorUL: #66cccc
+URxvt*matcher.button: 1
+URxvt*tabbed.tabbar-fg: 10
+URxvt*tabbed.tabbar-bg: #1A1A1A
+URxvt*tabbed.tab-fg: 4
+URxvt*tabbed.tab-bg: #1C1C1C
+
+
+! Examples of fonts
+!*font: -misc-envy code r-medium-r-normal--0-0-0-0-m-0-iso8859-1
+!xft:Fixed:pixelsize=14
+!*font: -xos4-terminus-medium-r-normal--20-200-72-72-c-110-iso8859-1
+!*boldFont: -xos4-terminus-bold-r-normal--18-180-72-72-c-100-iso8859-1
+! *font: -misc-monaco-medium-r-normal--0-0-0-0-p-0-iso8859-1
+! *font: -microsoft-consolas-medium-r-normal--0-0-0-0-m-0-iso8859-1
+!*font: xft:Terminus:style=Regular:pixelsize=22
+
+
+!Old color scheme
+!black
+!*color0: #1A1A1A
+!*color8: #454545
+!red
+!*color1: #E32E30
+!*color9: #FF6A6A
+!green
+!*color2: #86C67C
+!*color10: #D5FF80
+!yellow
+!*color3: #FFCC00
+!*color11: #FBEC5D
+!blue
+!*color4: #80B1FF
+!*color12: #C0F3FF
+!magenta
+!*color5: #9E6FFE
+!*color13: #CFB8FE
+!cyan
+!*color6: #30BFBF
+!*color14: #80FFFF
+!white
+!*color7: #CCCCC6
+
